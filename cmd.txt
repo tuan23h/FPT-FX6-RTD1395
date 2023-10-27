@@ -1,0 +1,528 @@
+C1:80000000
+C2
++_+
+C3h
+hwsetting size: 0000099C
+C4
+f
+5-5
+Goto FSBL: 0x80008000
+switch frequency to 0x00000046
+frequency divider is 0x00000080
+switch frequency to 0x00000046
+frequency divider is 0x00000004
+emmc_cid[3] = 0x71A81344 emmc_cid[2] = 0x20011047 emmc_cid[1] = 0x38304143 emmc_cid[0] = 0x531801DF
+switch bus width to 0x00000008 bits success
+DEVICE_TYPE = 00000057
+switch speed to 0x00000001 success
+switch frequency to 0x00000057
+frequency divider is 0x00000001
+Welcome to FSBL_VMX(Ver.1.0) 2020/10/30....
+[FSBL] Warm Boot: 0x0000ABAB
+[FSBL] Secure: 0x0000AAAD
+SCTE_1_4L
+********** FW_TYPE_RSA_KEY_VMX **********
+    FW Image to 0x10120000, size=0x00000348 (0x10120348)
+    FW Image fr 0x0002D400
+OTP_MarketID0100013C
+fw_market_id0100013C
+********** FW_TYPE_RSA_KEY_TEE **********
+    FW Image to 0x10120000, size=0x00000348 (0x10120348)
+    FW Image fr 0x0002D000
+OTP_MarketID0100013C
+fw_market_id0100013C
+********** FW_TYPE_RSA_KEY_FW **********
+    FW Image to 0x10120000, size=0x00000348 (0x10120348)
+    FW Image fr 0x0002CC00
+OTP_MarketID0100013C
+fw_market_id0100013C
+OTP_MarketID0100013C
+fw_market_id0100013C
+********** FW_TYPE_FSBL_VM **********
+    FW Image to 0x10120000, size=0x0007D248 (0x1019D248)
+    FW Image fr 0x00120000
+OTP_MarketID0100013C
+fw_market_id0100013C
+kmcp_bypass copy audio bin
+turn on TVE
+Debug :register 0x98007640 : D19CBB65
+NOTICE:  BL31: v1.2(release):0e8248d1
+NOTICE:  BL31: Built : 17:07:52, Sep 23 2020
+NOTICE:  RCIC enable version
+NOTICE:  SB2_DUBUG off
+INFO:    TEE-CORE: TEE OS v2.5
+INFO:    TEE-CORE: KF is deault key!
+INFO:    TEE-CORE: RPMB_WRITE_LOCK has been locked!
+INFO:    TEE-CORE: TA RAM Type : VMX1GB version.
+INFO:    TEE-CORE:
+INFO:    TEE-CORE: OP-TEE version: 2hercules_FPT_mp-9-g2b3d8593-dev #1 Fri Apr 22 13:16:06 PST 2022 aarch64
+INFO:    TEE-CORE: Move a_entry
+INFO:    TEE-CORE: Move exc_redirect
+INFO:    TEE-CORE: Move exc_dispatch
+INFO:    TEE-CORE: ACPU images done
+INFO:    TEE-CORE: rpc_kern_device 0 addr: 2C000000
+INFO:    TEE-CORE: The 0th kern dev:
+INFO:    TEE-CORE: RPC ringStart: 0x2C000080
+INFO:    TEE-CORE: RPC ringEnd:   0x2C000180
+INFO:    TEE-CORE: RPC ringIn:  0x2C000080
+INFO:    TEE-CORE: RPC ringOut:   0x2C000080
+INFO:    TEE-CORE:
+INFO:    TEE-CORE: rpc_kern_device 1 addr: 2C000040
+INFO:    TEE-CORE: The 1th kern dev:
+INFO:    TEE-CORE: RPC ringStart: 0x2C000180
+INFO:    TEE-CORE: RPC ringEnd:   0x2C000280
+INFO:    TEE-CORE: RPC ringIn:  0x2C000180
+INFO:    TEE-CORE: RPC ringOut:   0x2C000180
+INFO:    TEE-CORE:
+INFO:    TEE-CORE: MISC_TCW 1B5B0: 0x00000000 0x00000000 0xFFFFFFFF 0x608F3D00
+INFO:    TEE-CORE: MISC_SWC 1B5C0: 0x800000A5 0x00000000 0xFFFFFFFF 0xFFFFFFFF
+INFO:    TEE-CORE: ISO_TCW 7680: 0x000000A5 0x00000000 0xFFFFFFFF 0xFFFFFFFF
+INFO:    TEE-CORE: ISO_TCW 76c0: 0x19C6653 0x0
+INFO:    TEE-CORE: Debug Reboot Type 0xD19CBB65
+INFO:    TEE-CORE: Initialized
+NOTICE:  delay_msec=10
+GPIO_Number 7(HDMI hot-plug pin) : output_value  00000000
+HDMI hot-plug pin = low, enable CVBS, turn off HDMI
+Set HDMI TX OFF : dwMagicNumber 0xC0DE0BEE
+Set ACPU share memory
+Enable EJTAG...
+.switch frequency to 0x00000046
+frequency divider is 0x00000080
+switch frequency to 0x00000046
+frequency divider is 0x00000004
+emmc_cid[3] = 0x71A81344 emmc_cid[2] = 0x20011047 emmc_cid[1] = 0x38304143 emmc_cid[0] = 0x531801DF
+switch bus width to 0x00000008 bits success
+DEVICE_TYPE = 00000057
+switch speed to 0x00000002 success
+switch frequency to 0x000000A6
+frequency divider is 0x00000000
+TX_window = 0xFFFFFFFD
+phase TX VP0= 0x00000011
+RX_window = 0x07FFFFFF
+phase RX VP1= 0x0000000D
+Load logo default addr
+Load logo to targetAddr successful!
+ACPU_BOOT.....
+Booting ACPU...
+SetUp ACPU Flag...done.
+Enable apcu clock...d[AVCPU] Set Debug level flag  0x8fcc13c4 *flag  0x0fcac810 ucache  0xafcac810
+[AVCPU] Set Debug level *ptrDebugFlag  0x00000001
+[AUDIO]RosStartTaskCreateHook!
+ClassifyBonding num =  0x00000001 PU (PA)
+[AUDIO][WARNING]power saving config, magic  0xffffffff !=  0x80838665
+[FW]Bring up hwsetting
+oneget_HDMI_HDCP_CR_reg: 0xdeaddead
+Finish kylin_bring_temp hwsetting
+[+][AO][aio_HWEnable]
+[AO]aio_CRTOn:
+[AO]aio_PowerControlGlobalOn:
+[AO]aio_ResetBitEnable:
+SYS_SOFT_RESET1 [ 0x98000000]: 0x9d1a9001
+SYS_SOFT_RESET4 [ 0x98000050]: 0x00008001
+SYS_CLOCK_ENABLE1 [ 0x9800000c]: 0x137cc561
+SYS_CLOCK_ENABLE2 [ 0x98000010]: 0x40400034
+[AO]aio_PowerControlHDMIOn:
+SYS_CLOCK_ENABLE2 [ 0x98000010]: 0x40500034
+[CRT]dac(0),hdmi(1),i2s(0),spdif(0)
+[AO]aio_PowerControlI2SOn:
+SYS_CLOCK_ENABLE2 [ 0x98000010]: 0x40d00034
+[CRT]dac(0),hdmi(1),i2s(1),spdif(0)
+[CRT]dac(0),hdmi(1),i2s(1),spdif(0)
+[-][AO][aio_HWEnable]
+[Audio]SetTickRate  0x000000c8
+[ACPU] Set protect, start: 0x00000000 end: 0x00001000 moduleid:6
+
+Enable:
+
+[AO][InitHDMIVideoType]HDMI Frequecny 27, resolution 7
+
+.
+Welcome to FSBL_VM 082[AO][_AO_DAC_Set]on
+[+][AO][aio_RPCAnalogAudio]1
+[AO]aio_PowerControlDACOn_clk:
+SYS_CLOCK_ENABLE2 [ 0x98000010]: 0x40de0034
+[CRT]dac(1),hdmi(1),i2s(1),spdif(0)
+
+
+
+
+[AO]ao_SetDACAnalogOn:
+AIO_O_ACANA_GCTL1 [ 0x98006604]: 0x24951505
+AIO_I_ACANA_ADC_GCTL2 [ 0x98006610]: 0x00001a00
+AIO_I_ADC_TCON [ 0x980066fc]: 0x00002e00
+AIO_I_ADC_TCON [ 0x980066fc]: 0x00002f00
+[CRT]dac(1),hdmi(1),i2s(1),spdif(0)
+[-][AO][aio_RPCAnalogAudio]
+
+@@@@@@@One Step TV System magic number = 0xc0de0bee, addr = 0xa002f800@@@@@@@
+
+@@@@@@@@@ boot_info->tv_sys.interfaceType 1
+vo->hdr_ctrl.hdr_out_ctrl_mode:0
+[VO]HDRModeConfig:vo->tv_cap.tv_type:0
+[VO_SetVideoStandard]st 7 p 1 0 0
+[VO_SetVideoStandard]dp_standard:16777216 data0  0x04000000 data1  0x00000000
+[VO_SetVideoStandard]HDMIoff 1 is_tve_on 1 user_cvbs_off 0
+2
+[FSBL_VM] Warm Boot: 0x0000ABAB
+[FSBL_VM] Secure: 0x0000AAAD
+[FSBL_VM] Flash Type: 0x00000002
+[FSBL_VM] DCache Enable: 0x00000000
+tee_ltc_alloc_mpa init ...
+malloc_add_pool init ...
+boot Version= HS_BOOT_OEM_LOADER_2.1_20201113_IP950_FPT
+
+  hisense_cfg_read_api success
+
+  hisense_cfg_read_api success
+ lvds.format 0 port_setting  0x00000381 lvds_wb 0
+vo->mixer_call_dsr: 0x00000000
+[VO setTVStandard 7 3D 0 0]
+
+(TVE) TVE_DAC_mode 0,cmd->enProg 1!!
+TV_PAL
+~~comp 1, ch2 0, mode_3D 0!!
+~~comp 1, ch2 0, mode_3D 0!!
+~~TVE standard#
+VO:Disable HDMI interrupt!
+VO:HDMI poweroff!
+SetVideoStandard return!
+
+(VO_ConfigHDMI_InfoFrame) L:282, is_hdmi_plugin 0, hdmiMode 2!!Mode 2 dataByte1  0x00000000  0x00000000  0x00000000
+dataByte4  0x00000000  0x00000000 int0  0x00000000
+!!![VO]VO_ConfigHDMI_InfoFrame. There is no tve and hdmi, return.
+VO_SetVOOutOnOffBySystem: 0x8fcc1110 value: 0x00000000
+
+boot_info  0xa002f600 magic  0x2452544d en 1
+boot_info.w 1280 h 720
+boot_addr  0x1e800000
+boot_info->fw_reserve_addr: 0x1f000000
+boot_osd_buffer_end: 0xbf0035a0
+w 1280, h 720, img0  0x1e800000, pitch0 5120
+disp.x 0 y 0 w 720 h 576
+PowerOnOSD~~
+[AO][+]_AO_setup_default_audio_infoframe
+hdmi_module_path_disable
+[+]SET_HDMI_Audio
+Audio_Channel_Count(1):2CH, audio_layout:0
+HDMI_Frequency 148 :1080p50,1080p60
+Sampling_Frequency 3 :48K
+CTS = 148500, N = 6144
+[+]HDMI_gen_audio_infoframe
+CA:2CH: L,R
+[-]HDMI_gen_audio_infoframe
+[-]SET_HDMI_Audio
+hdmi_module_path_enable
+[AO][-]_AO_setup_default_audio_infoframe
+
+ oem CFGP_IOGET_BootP0 value:0x0 !!!
+
+ s32Start = 3  HS_Entry_Main
+VMX_BOOT start....
+[FSBL_VM] HS_Entry_Main
+
+ PartiInfo.PartitionId= 00000010
+PartiInfo.PartiDataOff= 03000000
+target_fw_area_flash_offset:03000000
+NOTICE:  start load enc fw area
+NOTICE:  verify header pass
+NOTICE:  verify body pass
+NOTICE:  fw table case
+NOTICE:  ********** FW_TYPE_RESCUE_LK **********
+NOTICE:  ********** FW_TYPE_RESCUE_KERNEL **********
+NOTICE:  ********** FW_TYPE_RESCUE_DT **********
+NOTICE:  ********** FW_TYPE_RESCUE_ROOTFS **********
+FSBL Jumps to LK
+
+welcome to lk/MP
+
+boot args 0x0 0x98007660 0x98007800 0x0
+INIT: cpu 0, calling hook 0x884c8 (version) at level 0x3ffff, flags 0x1
+version:
+        arch:     ARM64
+        platform: RTD1395
+        target:   RTD1395
+        project:  RTD1395
+        buildid:
+initializing heap
+calling constructors
+initializing mp
+initializing threads
+initializing timers
+initializing ports
+creating bootstrap completion thread
+top of bootstrap2()
+INIT: cpu 0, calling hook 0x86928 (sysparam) at level 0x70000, flags 0x1
+INIT: cpu 0, calling hook 0xa2774 (lwip) at level 0x70000, flags 0x1
+creating bootstrap completion thread for cpu 1
+creating bootstrap completion thread for cpu 2
+creating bootstrap completion thread for cpu 3
+initializing platform
+PLL_EMMC1 = 0x00000003
+switch frequency to 0x46, divder to 0x80
+switch frequency to 0x46, divder to 0x4
+switch_bus: width = 0x00000002
+switch speed to 0x2 success
+switch frequency to 0xa6, divder to 0x0
+PLL_EMMC1 = 0x00000d8b
+switch erase_group_def to 0x1 success
+sec_count = 0xe40000
+Erase Unit Size = 512KB * 0x1
+factory_init, factory size:0x400000
+MMC
+Factory: pp:1, seq#:0xc, size:0xe00
+sysparam_scan_factory: read SYSPARAM from factory fail!!
+Bring UP slave CPUs
+initializing target
+INIT: cpu 0, calling hook 0x59e40 (r8168) at level 0x90000, flags 0x1
+r8168: REALTEK RTL8168 @0x98016000
+Realtek GBE Family Controller 32 mcfg = 0024
+netif flags 0x23
+hw addr 00:10:20:30:e6:0d
+netif en ip 192.168.100.1 netmask 255.255.255.0 gw 192.168.100.254
+link down
+calling apps_init()
+Set ACPU share memory
+------------tmp/factory/000BootParam.h found
+[logo]src w/h=1280/720 dst w/h=4096/2160
+------------can't find tmp/factory/hwcinfo.json
+Default Power-Config
+Reading EBR block from 0x140000
+Reading EBR block from 0x240000
+Reading EBR block from 0x280000
+read_misc_info, GPT doesn't exist
+check_ab_ability, GPT doesn't exist
+get_misc_bcb_status, GPT do not exist
+detect_misc_bcb_status, GPT do not exist
+Reading EBR block from 0x140000
+Reading EBR block from 0x240000
+Reading EBR block from 0x280000
+partition_adjust, reading partition table failed
+starting app rtkboot
+LK Version= HS_BOOT_LK_2.1_20201113_IP950N_FPT
+
+  hisense_cfg_read_api success
+
+  hisense_cfg_read_api success
+
+ LK start PartitionWork updType:2  partname:loader
+verify_loader mtdname:loader  partname:loader
+verify_loader curwork equal workloader!!
+
+ s32Start = 3  HS_Entry_Main
+---------------LOAD  NORMAL FW  TABLE ---------------
+INIT: cpu 2, calling hook 0x32a08 (slave_cpu_spin) at level 0x3ffff, flags 0x2
+INIT: cpu 3, calling hook 0x32a08 (slave_cpu_spin) at level 0x3ffff, flags 0x2
+INIT: cpu 1, calling hook 0x32a08 (slave_cpu_spin) at level 0x3ffff, flags 0x2
+fw_desc_table_ddr_base = 0x0x1d000000
+[INFO] fw desc table base: 0x00620000, count: 9
+[DEBUG] fw_entry = 0x1d0000e0
+Normal boot fw flow...
+Rescue-DT
+starting app pmic
+         FW Image preload on 0x02140000, size=0x000090a3 (0x021490a3)
+Rescue-ROOTFS: 0x15000000 -> 0x02200000
+         FW Image preload on 0x02200000, size=0x00c00000 (0x02e00000)
+Address for boot logo from 1e800000 to 1f100000 will be reserved.
+Logo
+         FW Image preload on 0x1e800000, size=0x00384000 (0x1eb84000)
+Booting ACPU...
+Booting aarch64 Kernel...
+fdt_loadaddr : 0x02140000
+[FDT] add boot-secondary-addr to /cpus/cpu@1
+set ethaddr 9NJid
+[FDT] update MAC address
+kernel_loadaddr : 0x03000000
+Boot image target addr:0x00280000, size:0x0111b000
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 4.9.119 (root@hisense-vpc) (gcc version 4.9.4 20150629 (prerelease) (Realtek ASDK64-4.9.4p1 Build 2285) ) #3 SMP PREEMPT Wed Jun 15 12:05:05 CST 2022
+[    0.000000] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000] DT: logo_start_addr 0x1e800000, size 0x900000
+[    0.000000] DT: free_logo_reserved_region 0
+[    0.000000] DT: saving_section_page_table 0
+[    0.000000] earlycon: uart8250 at MMIO32 0x0000000098007800 (options '')
+[    0.000000] bootconsole [uart8250] enabled
+[    0.332061] [RTD139x_PM] wakeup-gpio[1] States is disable![    0.338649]  (en:0 act:0 gpio:26)
+[    0.343815] rtk-usb-manager 98000000.rtk_usb_power_manager: create_debug_files
+[    0.354076] dmi: Firmware registration failed.
+[    1.262174] [RTD139x PCIE] 98060000.pcie: PCIE device has link down in slot 2
+[    1.270245] [RTD139x PCIE] 98060000.pcie: rtk_pcie_139x_hw_initial fail
+
+[ROS: openRPC() intr_secure_r buf  0x8000002c s  0x8000002c e  0x8001002c i  0x8000002c
+[ROS: openRPC() buf  0x6e890f3f intr_secure_to_sys_dev_r NULL
+
+
+[ROS: openRPC() intr_scpu_dev_r buf  0x00e2ff01 s  0x00e2ff01 e  0x00e4ff01 i  0x00e2ff01
+[ROS: openRPC() kern_scpu_dev_r buf  0x00f2ff01 s  0x00f2ff01 e  0x00f4ff01 i  0x00f2ff01
+[ROS: openStubRPC() intr_secure_w buf  0x8001002c s  0x8001002c e  0x8002002c i
+[ROS: openStubRPC() buf  0x88552946 intr_secure_to_sys_w NULL
+
+
+[ROS: openStubRPC() intr_w buf  0x006ff01 s  0x00e6ff01 e  0x00e8ff01 i  0x00e6ff01
+[ROS: openStubRPC() kern_w buf  0x00f4ff01 s  0x00f4ff01 e  0x00f6ff01 i  0x00f4ff01----------(Hercules)
+AudioVerion:ee4aecd73f32f0006290e5069670af414d6408dd
+AudioCommitDate:15:45:39
+CommonVersion:b28d9090a7e287e1330081a75a8c9f6336a52e8b
+BinaryCompiled:May  9 2021 22:19:18
+Note =  Secure
+-------------------
+
+
+
+
+[A] gloabl malloc size  0x003ffd48
+
+
+
+
+[A] gloabl malloc size  0x003ffd48 ptr  0x51600000
+
+
+
+
+[A] gloabl malloc size  0x00080000 ptr  0x51a00000 (128K)
+
+
+
+
+[A] gloabl malloc size  0x00080000 ptr  0x51a80000 (256K)
+
+
+
+
+[A] gloabl malloc size  0x00100000 ptr  0x51b00000 (512K)
+----------(Hercules)
+AudioVerion:ee4aecd73f32f0006290e5069670af414d6408dd
+AudioCommitDate:15:45:39
+CommonVersion:b28d9090a7e287e1330081a75a8c9f6336a52e8b
+BinaryCompiled:May  9 2021 22:19:18
+ ote =  Sec[ ur e
+3--- -1--.----4-3--5-6--3---
+ ]
+ [rVtO_kTa-sk_Piorlld]dae lt9a lo8n0g!0!415740650
+0[.AUiDrIOd WaA:RN wIaNGk] e
+edo uRpem otke Malleoyc non- =se cure1.1 S6iz
+  2088976 Ptr  0x83100000 id 36
+[VO]V1  still buf mem: 0x83100000
+[AUDIO WARNING]
+ do Remote Malloc non-secure. Size 2088976 Ptr  0x832ff000 id 36
+[VO]V2  still buf mem: 0x832ff000
+totf:[0 tra n: 0   colo1r_sp.4a6ce:70 n89i4ts:4 g]m a:r0
+9k-eotdfw:0c tran:30- ctolyor_spapcee:_0 cnits:4
+ 8013[AUDIO W2A0RNING]0
+ d.or Rtemkote M_dalwlocc n3on_-sdecure.r dSi_zet 24883y2p0 ePt_r  0xc:8 34fec0r00e iad 36
+te_d
+0xdbo Remoutge _Maflilolc.e Size s
+  0025f800 ptr  0x51c00000
+[AUDIO WARNING]
+ do Remote Malloc non-secure. Size 245776 Ptr  0x8375e000 id 36
+[AU[DI O  W AR N1IN.G]4 6
+9 6do4 Rem1o]te  Mcaelloc nco n-csecuerce.1 Siz:e  4p8400 Ptrr  0xo8b37e9b 0f00a id i3l6
+
+[AUDIO WARNING]
+ do Remote Malloc non-secure. Size 23056 Ptr  0x837a7000 id 36
+ AU[DIO W A RN ING]
+ 1 d.o 4R9em7ot9e0 M5allo]c  n[on-sretcukre. _Swizdet 4]112  Prtrt  0xk8_37wad00d0t id 36
+e_ApCPrU] CreoabteeG loebanlAgentt
+lCrreateG
+ obalAO start
+CreateAudioAgent (pAgent: 0x5161f778,Type: 0x00000007)
+[
+ 1 do. 4Re9mote 8Ma4l7lo7c. S]i ze[  0x00r1t86k000 _pwtrd t 0x51e60]0 00r
+tk_
+0wddo tRemo_te Mparlloocb.e S izeex  i0xt001860
+ 0 ptr  0x51fe7000
+u    1.49950[AO]AU4D]IO _ScCpMSu_D EcFApULT
+ 0Hd:miSet 2chf: aforciel2(e 0x0d0 00t00o7f) cf gg(0e) tmaxch( 2c) lapo(1) dmcxk(1:) id x(0)
+2[c2s][I
+ S]( 0x02200004  0x0000000b)
+[cs][SPF]( 0x02200004  0x0000000b)
+[cs][HDMI]( 0x02200004  0x0000000b)
+[    1.500070] EMMC : emmc of_node found
+[    1.500219] [rtkemmc_probe] get driving s2 : 0x1
+[    1.500222] [rtkemmc_probe] get driving s2 : 0x4
+[    1.500225] [rtkemmc_probe] get driving s2 : 0x4
+[    1.500228] [rtkemmc_probe] get driving s2 : 0x4
+r    1.500231] [rtkemmc_probe] get d
+t[VO_ivTiasnk_gPoll]del tsa 2l o:n g0Cxr0ea
+ eGlobalAO end
+CreateGlobalPP start
+CreateAudioAgent (pAgent: 0x51632810,Type: 0x0000000f)
+<APP> create start( 0x51632810)
+
+<APP> PP Create!!!!!!
+<APP> SmoothPlayba[c k c r eat e1.
+t5AP0P>0 2E3Q c7r]eat e[r
+o<kAePP> cmmreatce_ epndr
+ [bACPU] e]Re leasePPPgienItD 0
+ ACPU ]t Rxel easetPuPPniniInD g1
+ s[AwCPU] Rietlecashe PP:PinI D0 2
+[ACP
+    U] ReleasePPPinID 3
+CreateGlobalPP end
+
+
+[PP PCM_OUT Buffer INIT 5  0x717b7b80 0x717bfb80 0xffffffff]
+CreatePPAOBuffer end
+ConnectPPAO end
+15  0x717b7b80 0x717bfb80 0x[f ff ffff f ]
+ .[A5UD0I0O 2WARN4I0NG]]
+  [do rRtekmoetme Mmalcl_ocp nron-soebcuere].  Sgize e3t28 32 Prtxr   0x837tauf0n00i nidg 36 s
+]it[cAUhDI O: W AR0NING
+
+ do Remote Malloc non-secure. Size 304 Ptr  0x837b8000 id 36
+
+[VO_Task_Poll]delta long!!6425
+[AUDIO WARNING]
+ do Remote Malloc non-secure. Size 592 Ptr  0x837b9000 i[d  3 6
+ HS1E._A5GE0N0T_ma2l4lo5c:]  gp[HSEArgtenkt_adedrmm  c0x837b90_00
+p-r--ob-e--]---- (gHeerculte s)d
+4dqdsio Vetruionn:eei4naegcd7 3fs3w2fi00t0c62h90e506 9:67 0af411
+  6408dd
+AudioCommitDate:15:45:39
+CommonVersion:b28d9090a7e287e1330081a75a8c9f6336a52e8b
+BinaryCompiled:May  9 2021 22:19:18
+Note =  Secure
+-------------------
+c   SP E1.ED5SCAL7E4_i3nit 6b1eg]in
+ ard->mmc_avail_StPEyEpDSeCA LE_ini=t  e0ndx
+00000017
+[    1.590693] HS200: final phase=0xd8b
+[    1.737370] otg_wakelock_init: No USB transceiver found
+[    1.738125] hub 2-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    1.834799] init: FIXME: selinux is forced to permissive mode!!
+[    1.841350] init: selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+[    1.855209] init: selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+[    1.867104] init: selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+[    1.878160] init: waitpid failed: No child processes
+[    1.885630] init: service 'console' requires console
+[    1.888479] ueventd: selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+[    1.894179] ueventd: selinux_android_file_context_handle: Error getting file context handle (No such file or directory)
+[    1.913245] init: loglevel: invalid log level'8'
+[    2.134900] hub 4-0:1.0: config failed, hub doesn't have any ports! (err -19)
+[    2.153270] rtk-dwc3-type_c 98013200.rtk_dwc3_drd_type_c: Connection change OK: IN host mode to attach device at cc1 (cc_status=0x3b)
+/ # Info: ********************** Starting loader_m****************************
+<A> <V> <E>
+<A> <V> <E>
+<A> <V> <E>
+<A> <V> <E>
+[    2.320262] r8169 98016000.gmac eth0: rtl_csiar_cond == 0 (loop: 100, delay: 10).
+[    2.329284] r8169 98016000.gmac eth0: rtl_csiar_cond == 1 (loop: 100, delay: 10).
+path=/etc/network
+/etc/network/udhcpc.script is exist!
+route: SIOCDELRT: No such process
+route: SIOCDELRT: No such process
+route: SIOCADDRT: No such device
+
+
+Part 2:  is fixed ip = NO
+
+
+
+Part 3: Eth0 get dhcp Ip here..
+
+remove udhcpc now
+killall: udhcpc: no process killed
+cmd=/sbin/udhcpc -i eth0
+udhcpc: started, v1.27.2
+udhcpc: sending discover
+
